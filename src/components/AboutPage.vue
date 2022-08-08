@@ -62,16 +62,16 @@
       <div class="flex ">
           <div>
             <router-link class="" to="/about">
-            <button @focusout="outMenu()" @click="openDropdown()"  id="dropdownDividerButton" data-dropdown-toggle="dropdownDivider" class="font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center " type="button"><img class="mr-1.5" src="../assets/language/united-kingdom 1.svg" alt=""> En</button>
+            <button @focusout="outMenu()" @click="openDropdown()"  id="dropdownDividerButton" data-dropdown-toggle="dropdownDivider" class="font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center " type="button"><img class="mr-1.5" src="../assets/language/united.svg" alt=""> En</button>
               <div v-show="isOpenLang" class=" bg-[#19172C] rounded">
                   <ul class=" text-sm text-gray-700 dark:text-gray-200 rounded">
                   <li class="flex hover:bg-slate-500 py-1">
-                    <img class="ml-3" src="../assets/language/uzbekistan 1.svg" alt="">
+                    <img class="ml-3" src="../assets/language/uzb.svg" alt="">
                     <a href="#" class=" block py-1 px-2 hover:text-white">O’z</a>
                   </li>
                   
                   <li class="flex hover:bg-slate-500">
-                    <img class="ml-3" src="../assets/language/russia 1.svg" alt="">
+                    <img class="ml-3" src="../assets/language/rus.svg" alt="">
                     <a href="#" class=" block py-2 px-2 hover:text-white">Ру</a>
                   </li>
                 </ul>
@@ -101,7 +101,7 @@
             globe - and partner with them to create lasting value in every direction. 
         </div>
         <div>
-            <img class="w-[200px] mr-8"  src="../assets/morflax-studio (1) 1.svg" alt="">
+            <img class="w-[200px] mr-8"  src="../assets/mStudio.svg" alt="">
         </div>
   </div>
   <div class="bg-[#FAF9F9] h-[500px]">
@@ -126,13 +126,13 @@
         <div class="text-[20px] text-[#19172C]">Investing and competetion achievments will appear here.</div>
        <div class="flex justify-between h-[600px]">
          <div class="block">
-          <img class="w-[150px] h-[200px] mt-[60px]" src="../assets/about/star.svg" alt="">
+          <img class="w-[150px] h-[200px] mt-[60px]" src="../assets/about/star1.svg" alt="">
           <div class="font-bold text-[24px] mb-5 mt-5">Republic IT conference <span class="text-[#40AAF8]">1st place</span></div>
          <div class="w-[491px] text-[16px] leading-6 mb-4 ">The main goal of the ansor.io platform, founded in July 2021, is to train young professionals through quality and popular online education. So far, more than 15,000 students are studying in more than 30 free and paid courses on mohirdev.uz.</div>
           <div class="date text-[16px] text-[#5D5FEF]">15.02.2022</div>
          </div>
           <div class="block">
-             <img class="w-[150px] h-[200px] mt-[60px]" src="../assets/about/star 2.svg" alt="">
+             <img class="w-[150px] h-[200px] mt-[60px]" src="../assets/about/star2.svg" alt="">
           <div class="text-[#40AAF8] font-bold text-[24px] mb-5 mt-5">Central Asia <span class="text-[#19172C]">IT conference</span></div>
          <div class="w-[495px] text-[16px] leading-6 mb-[30px] ">The Mohirdev project, which has been in talks with investors for the past few months, reached an agreement with the Pulse Group on December 29 to raise $ 500,000 for the development of the platform.</div>
           <div class="date text-[16px] text-[#5D5FEF]">15.02.2022</div>

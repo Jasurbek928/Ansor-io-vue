@@ -99,11 +99,11 @@
     </div>
       <div class="mx-auto w-100">
         <div class="" v-if="tab === 1">
-          <div class="flex">
-          <img class="w-[230px] h-[400px] object-cover rounded-lg " src="../assets/portfolio/Frame 39947.svg" alt="">
-          <img class="w-[230px] h-[400px] object-cover rounded-lg m-4" src="../assets/portfolio/Mask group1.svg" alt="">
-          <img class="w-[230px] h-[400px] object-cover rounded-lg m-4" src="../assets/portfolio/Mask group2.svg" alt="">
-          <img class="w-[230px] h-[400px] object-cover rounded-lg m-4" src="../assets/portfolio/Mask group3.svg" alt="">
+          <div class="flex justify-between ">
+          <img class="w-[230px] h-[400px] object-cover rounded-lg" src="../assets/portfolio/img0.svg" alt="">
+          <img class="w-[230px] h-[400px] object-cover rounded-lg" src="../assets/portfolio/img1.svg" alt="">
+          <img class="w-[230px] h-[400px] object-cover rounded-lg" src="../assets/portfolio/img2.svg" alt="">
+          <img class="w-[230px] h-[400px] object-cover rounded-lg" src="../assets/portfolio/img3.svg" alt="">
           
          </div>
         </div>
@@ -149,14 +149,14 @@
    <div class="bg-[#FAF9F9] h-[500px]">
        <div class="footer-top max-w-5xl mx-auto ">
         <div class="flex h-[220px]">
-          <div class="w-48"><img class="w-44" src="../assets/morflax-studio (1) 1.svg" alt=""></div>
+          <div class="w-48"><img class="w-44" src="../assets/mStudio.svg" alt=""></div>
           <p class="text-[48px] font-bold">Let’s discuss your <br><span class="text-blue-600">dream project</span></p>
         </div>
          <div class="flex mx-auto justify-center">
             <div class="card w-[33.3%]">
               <div class="p-6 h-48 bg-white rounded-xl border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
                 <div class="relative mb-2 ">
-                  <img  src="../assets/Ellipse 10.svg" alt="">
+                  <img  src="../assets/E10.svg" alt="">
                   <img class="absolute left-3 top-3" src="../assets/schedule.svg" alt="">
                 </div>
                   <h5 class="mb-2 font-xl font-bold tracking-tight text-[#19172C] dark:text-white">Scheduling software</h5>
@@ -166,7 +166,7 @@
             <div class="card mx-3 w-[33.3%]">
               <div class="p-6  h-48  bg-white rounded-xl border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
                 <div class="relative mb-2 ">
-                    <img  src="../assets/Ellipse 10.svg" alt="">
+                    <img  src="../assets/E10.svg" alt="">
                     <img class="absolute left-3 top-3" src="../assets/microphone.svg" alt="">
                 </div>
                   <h5 class="mb-2 font-xl font-bold tracking-tight text-[#19172C] dark:text-white">Meeting management software</h5>
@@ -176,7 +176,7 @@
             <div class="card w-[33.3%]">
               <div class="p-6  h-48 bg-white rounded-xl border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
                 <div class="relative mb-2 ">
-                    <img  src="../assets/Ellipse 10.svg" alt="">
+                    <img  src="../assets/E10.svg" alt="">
                     <img class="absolute left-3 top-3" src="../assets/video.svg" alt="">
                 </div>
                   <h5 class="mb-2 font-xl font-bold tracking-tight text-[#19172C] dark:text-white">Video conferencing</h5>

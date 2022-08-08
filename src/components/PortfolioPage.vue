@@ -62,16 +62,16 @@
       <div class="flex">
           <div>
             <router-link class="" to="/portfolio">
-            <button @focusout="outMenu()" @click="openDropdown()"  id="dropdownDividerButton" data-dropdown-toggle="dropdownDivider" class="font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center " type="button"><img class="mr-1.5" src="../assets/language/united-kingdom 1.svg" alt=""> En</button>
+            <button @focusout="outMenu()" @click="openDropdown()"  id="dropdownDividerButton" data-dropdown-toggle="dropdownDivider" class="font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center " type="button"><img class="mr-1.5" src="../assets/language/united.svg" alt=""> En</button>
               <div v-show="isOpenLang" class=" bg-[#19172C] rounded">
                 <ul class=" text-sm text-gray-700 dark:text-gray-200 rounded">
                   <li class="flex hover:bg-slate-500 py-1">
-                    <img class="ml-3" src="../assets/language/uzbekistan 1.svg" alt="">
+                    <img class="ml-3" src="../assets/language/uzb.svg" alt="">
                     <a href="#" class=" block py-1 px-2 hover:text-white">O’z</a>
                   </li>
                   
                   <li class="flex hover:bg-slate-500">
-                    <img class="ml-3" src="../assets/language/russia 1.svg" alt="">
+                    <img class="ml-3" src="../assets/language/rus.svg" alt="">
                     <a href="#" class=" block py-2 px-2 hover:text-white">Ру</a>
                   </li>
                 </ul>

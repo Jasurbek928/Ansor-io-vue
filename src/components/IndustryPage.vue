@@ -62,16 +62,16 @@
         <div class="flex">
             <div>
               <router-link class="" to="/portfolio">
-              <button @focusout="outMenu()" @click="openDropdown()"  id="dropdownDividerButton" data-dropdown-toggle="dropdownDivider" class="font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center " type="button"><img class="mr-1.5" src="../assets/language/united-kingdom 1.svg" alt=""> En</button>
+              <button @focusout="outMenu()" @click="openDropdown()"  id="dropdownDividerButton" data-dropdown-toggle="dropdownDivider" class="font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center " type="button"><img class="mr-1.5" src="../assets/language/united.svg" alt=""> En</button>
                 <div v-show="isOpenLang" class=" bg-[#19172C] rounded">
                   <ul class=" text-sm text-gray-700 dark:text-gray-200 rounded">
                     <li class="flex hover:bg-slate-500 py-1">
-                      <img class="ml-3" src="../assets/language/uzbekistan 1.svg" alt="">
+                      <img class="ml-3" src="../assets/language/uzb.svg" alt="">
                       <a href="#" class=" block py-1 px-2 hover:text-white">O’z</a>
                     </li>
                     
                     <li class="flex hover:bg-slate-500">
-                      <img class="ml-3" src="../assets/language/russia 1.svg" alt="">
+                      <img class="ml-3" src="../assets/language/rus.svg" alt="">
                       <a href="#" class=" block py-2 px-2 hover:text-white">Ру</a>
                     </li>
                   </ul>
@@ -106,7 +106,7 @@
           </div>
             <div>
               <img class="w-48 my-[60px]" src="../assets/footer-br.svg" alt="">
-              <img class="ml-[90px] my-[70px]" src="../assets/RLL-04 1 1.svg" alt="">
+              <img class="ml-[90px] my-[70px]" src="../assets/rll.svg" alt="">
             </div>
         </div>
     </div>
@@ -118,7 +118,7 @@
             <div class="text-[24px] font-semibold mb-5">We give more <span class="text-[#40AAF8]">solutions</span> to problems in our projects</div>
            <div class="relative bg-slate-400 ">
              <img class="absolute ml-5 mt-5" src="../assets/Vector.svg" alt="">
-             <img class="absolute left-0.5 top-1" src="../assets/Ellipse 14.svg" alt="">
+             <img class="absolute left-0.5 top-1" src="../assets/E14.svg" alt="">
            </div>
           <div class="mt-[100px] main-ul">
              <ul class="w-[480px] ml-4">
@@ -130,7 +130,7 @@
           <div class="block mt-[40px]">
             <div class="relative  mt-[90px] ml-[40px] ">
               <img class="absolute top-4 left-5" src="../assets/complete.svg" alt="">
-              <img class=" absolute left-0.5" src="../assets/Ellipse 15.svg" alt="">
+              <img class=" absolute left-0.5" src="../assets/E15.svg" alt="">
             </div>
            <div class="main-ul">
              <ul class="pt-[80px] px-[50px]">
@@ -167,7 +167,7 @@
         <p class="text-[40px] pt-6 mb-2 font-bold  text-blue-600 ">Product<span class="font-bold text-[#19172C] "> we developed</span></p>
         <div class="text-[20px] opacity-70">Enjoy save and order new project to us.</div>
         <div class="flex mt-5 h-[450px]">
-          <img class=" w-[250px] h-[350px] rounded-lg object-cover" src="../assets/portfolio/image 47.svg" alt="">
+          <img class=" w-[250px] h-[350px] rounded-lg object-cover" src="../assets/portfolio/img47.svg" alt="">
           <img class=" w-[250px] h-[350px] rounded-lg object-cover ml-5" src="../assets/portfolio/222.svg" alt="">
         </div>
         <p class="text-[40px] pt-6 mb-2 font-bold  text-blue-600 ">Review <span class="font-bold text-[#19172C] ">from our users</span></p>

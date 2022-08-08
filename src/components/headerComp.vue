@@ -59,16 +59,16 @@
       <div class="flex ml-10">
           <div>
             <router-link to="/">
-            <button @focusout="outMenu()" @click="openDropdown()" class="text-white font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center " type="button"><img class="mr-1.5" src="../assets/language/united-kingdom 1.svg" alt=""> En</button>
+            <button @focusout="outMenu()" @click="openDropdown()" class="text-white font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center " type="button"><img class="mr-1.5" src="../assets/language/united.svg" alt=""> En</button>
               <div v-show="isOpenLang" class=" bg-white rounded">
                 <ul class=" text-sm text-gray-700 dark:text-gray-200 rounded">
                   <li class="flex hover:bg-slate-500 py-1">
-                    <img class="ml-3" src="../assets/language/uzbekistan 1.svg" alt="">
+                    <img class="ml-3" src="../assets/language/uzb.svg" alt="">
                     <a href="#" class=" block py-1 px-2 hover:text-white">O’z</a>
                   </li>
                   
                   <li class="flex hover:bg-slate-500">
-                    <img class="ml-3" src="../assets/language/russia 1.svg" alt="">
+                    <img class="ml-3" src="../assets/language/rus.svg" alt="">
                     <a href="#" class=" block py-2 px-2 hover:text-white">Ру</a>
                   </li>
                 
@@ -88,11 +88,11 @@
       <div class="text-xl mb-8">Experienced web and mobile application development team, <br> 
           because there is no site in the world where only Muslims work.</div>
           <div class="relative pointer-events-none justify-center w-[92px] h-[92px] m-auto ">
-            <img src="../assets/Ellipse 7.svg" alt="">
+            <img src="../assets/E7.svg" alt="">
             <div class="absolute w-full h-full top-0 animate-[spin_5s_linear_infinite]">
               <div class="relative h-full w-full">
-                <img class="absolute top-[9px] right-1/2 translate-x-1/2" src="../assets/Untitled-1 3.svg" alt="">
-                <img class="absolute bottom-[9px] right-1/2 translate-x-1/2" src="../assets/Untitled-1 4.svg" alt="">
+                <img class="absolute top-[9px] right-1/2 translate-x-1/2" src="../assets/u-1-3.svg" alt="">
+                <img class="absolute bottom-[9px] right-1/2 translate-x-1/2" src="../assets/u-1-4.svg" alt="">
               </div>
             </div>
           </div>
