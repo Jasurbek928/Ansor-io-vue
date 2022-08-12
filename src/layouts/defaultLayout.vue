@@ -1,6 +1,6 @@
 <template>
     <div>
-
+        
         <router-view/>
         <FooterPage/>
     </div>
@@ -9,7 +9,7 @@
 <script>
 import FooterPage from '../components/FooterPage.vue';
     export default {
-    components: { FooterPage }
+    components: { FooterPage  },
 }
 </script>
 

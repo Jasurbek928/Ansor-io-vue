@@ -1,100 +1,100 @@
 <template>
 <div>
   <div class="bg-[#FAF9F9] h-[350px]">
-    <div class="max-w-5xl mx-auto">
-    <div class="nav flex h-[120px] py-5 justify-between">
-        <div class="flex  mt-1 w-[200px]">
+    <div class=" max-w-5xl mx-auto nav flex h-[125px] py-5 justify-between ">
+     <div class="flex  mt-1 w-[200px]">
             <router-link class="flex w-[200px]" to="/">
               <img class="w-[30px] h-[30px]" src="../assets/Group.svg" alt="">
              <p class="ml-1.5 text-[22px] text-[#19172C] font-medium">ANSOR.IO</p>
             </router-link>
       </div>
-        <div class="nav-link flex ">
-          <ul class="flex">
-            <li>
-              <router-link  to="/">
-              <button @focusout="outMenu()"  @click="openDropdownService()" class="text-[#19172C] font-medium rounded-lg text-[#19172C] w-[150px]  px-4 py-2.5 text-center text-[16px] inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button"><router-link to="/">Our Services</router-link><svg class="ml-2 w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
-                <div v-show="isOpenService" class=" bg-white rounded  mx-2 text-center">
-                  <ul class=" text-[12px] text-gray-700 dark:text-gray-200 text-justify">
-                    <li class="">
-                      <a href="#" class="block py-1 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
-                    </li>
-                    <li>
-                      <a href="#" class="block  px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
-                    </li>
-                    <li>
-                      <a href="#" class="block py-1 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
-                    </li>
-                  </ul>
-    
-                </div>
-              </router-link>
-            </li>
-            <li>
-              <router-link  to="/portfolio">
-              <button @focusout="outMenu()" @click="openDropdownIndustry()"  class="text-[#19172C] w-[120px]  font-medium text-[16px] px-4 py-2.5 text-center inline-flex items-center" type="button"><router-link to="/industry">Industry</router-link><svg class="ml-2 w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
-                <div v-show="isopenInd" class="bg-white rounded  mx-2 text-center">
-                  <ul class=" text-[12px] text-justify">
-                    <li>
-                      <a href="#" class="block py-1 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Healthcare</a>
-                    </li>
-                    <li>
-                      <a href="#" class="block  px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Education</a>
-                    </li>
-                    <li>
-                      <a href="#" class="block py-1 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Finance</a>
-                    </li>
-                  </ul>
-    
-                </div>
-              </router-link>
-            </li>
-              <li class=" px-4 py-2.5 ">
-              <router-link  class="text-[#19172C] text-[16px] " to="/portfolio">Portfolio</router-link>
-            </li>
-              <li class="px-4 py-2.5 ">
-              <router-link  class="text-[#19172C] text-[16px]" to="/about">About Us</router-link>
-              </li>
-
-          
-          </ul>
-        </div>
-        <div class="flex">
-            <div>
-              <router-link class="" to="/portfolio">
-              <button @focusout="outMenu()" @click="openDropdown()"  id="dropdownDividerButton" data-dropdown-toggle="dropdownDivider" class="font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center " type="button"><img class="mr-1.5" src="../assets/language/united.svg" alt=""> En</button>
-                <div v-show="isOpenLang" class=" bg-[#19172C] rounded">
-                  <ul class=" text-sm text-gray-700 dark:text-gray-200 rounded">
-                    <li class="flex hover:bg-slate-500 py-1">
-                      <img class="ml-3" src="../assets/language/uzb.svg" alt="">
-                      <a href="#" class=" block py-1 px-2 hover:text-white">O’z</a>
-                    </li>
-                    
-                    <li class="flex hover:bg-slate-500">
-                      <img class="ml-3" src="../assets/language/rus.svg" alt="">
-                      <a href="#" class=" block py-2 px-2 hover:text-white">Ру</a>
-                    </li>
-                  </ul>
-    
-                </div>
-            </router-link>
+      <div class="nav-link flex">
+        <ul class="flex ml-5">
+          <!-- services-link -->
+          <li class=" px-4 py-2.5">
+            <div class="flex  w-[130px]">
+              <router-link class="text-[#19172C] text-[16px]" to="/">Our services</router-link>
+            <div  @click="openDropdownService()" @focusout="outMenu()" class="w-[20px]  h-[20px]"><img class="w-[10px] h-[6px] mt-2 ml-2" src="../assets/about/Vector.svg" alt=""></div>
             </div>
-
+            <div v-show="isOpenService"  class="lang-box  rounded mt-2">
+                <ul class=" text-[12px]">
+                  <li>
+                    <a href="#" class="block py-1 px-4 hover:text-[#5D5FEF] text-white">Dashboard</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block  px-4 hover:text-[#5D5FEF] text-white">Settings</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block py-1 px-4 hover:text-[#5D5FEF] text-white">Earnings</a>
+                  </li>
+                </ul>
+  
+              </div>
+          </li>
+          <!-- industry-link -->
+            <li class="px-4 py-2.5">
+            <div class="flex  w-[110px] ">
+              <div class=""><router-link class="text-[#19172C] text-[16px]" to="/industry">Industry</router-link></div>
+            <div  @focusout="outMenu()" @click="openDropdownIndustry()" class="w-[20px]  h-[20px]"><img class="w-[10px] h-[6px] mt-2 ml-2" src="../assets/about/Vector.svg" alt=""></div>
+            </div>
+            <div v-show="isopenInd"  class="lang-box  rounded mt-2">
+                <ul class=" text-[12px]">
+                  <li>
+                    <a href="#" class="block py-1 px-4 hover:text-[#5D5FEF] text-white ">Healthcare</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block  px-4 hover:text-[#5D5FEF] text-white">Education</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block py-1 px-4 hover:text-[#5D5FEF] text-white">Finance</a>
+                  </li>
+                </ul>
+  
+              </div>
+          </li>
+            <!-- portfolio-link -->
+            <li class="py-2.5 px-4 w-[110px]">
+            <router-link  class="text-[#19172C] text-[16px] " to="/portfolio">Portfolio</router-link>
+            </li>
+            <!-- about-link -->
+            <li class="px-4 py-2.5 w-[110px] ">
+            <router-link  class="text-[#19172C] text-[16px]" to="/about">About Us</router-link>
+            </li>
+        </ul>
+      </div>
+      <div class="flex ml-10">
           <div>
-          <button  type="button" class=" py-2 ml-5 px-5 mt-1 text-sm font-medium focus:outline-none  rounded-lg border border-[#40AAF8] text-[#40AAF8]">Contact Us</button>
+            <div>
+            <button @focusout="outMenu()" @click="openDropdown()" class=" font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center " type="button"><img class="mr-1.5" src="../assets/language/united.svg" alt=""> En</button>
+              <div v-show="isOpenLang" class="  rounded">
+                <ul class=" rounded lang-box">
+                  <li class="flex  py-1">
+                    <img class="ml-3" src="../assets/language/uzb.svg" alt="">
+                    <a href="#" class=" block py-1 px-2 text-white ">O’z</a>
+                  </li>
+                  <li class="flex ">
+                    <img class="ml-3" src="../assets/language/rus.svg" alt="">
+                    <a href="#" class=" block py-2 px-2 text-white">Ру</a>
+                  </li>
+                </ul>
+              </div>
           </div>
+          </div>
+
+        <div>
+        <button  type="button" class=" p-3 ml-5 px-7  text-sm font-medium focus:outline-none  rounded-lg contact">Contact Us</button>
         </div>
       </div>
-        <div class="route mb-5 flex ">
+    </div>
+    <div class="max-w-5xl mx-auto">
+
+    <div class="route mb-5 flex ">
         <router-link class="opacity-60 text-[16px]" to="/">Home</router-link>
         <img src="../assets/angle-right.svg" alt="">
         <p class="text-[16px] opacity-80">Industry education</p>
-        </div>
-        <p class="text-[40px] pt-6 mb-2 font-bold  text-blue-600 ">Education<span class="font-bold text-[#19172C] "> industries</span></p>
+    </div>
+      <p class="text-[40px] pt-6 mb-2 font-bold  text-blue-600 ">Education<span class="font-bold text-[#19172C] "> industries</span></p>
         <div class=" text-[17px] opacity-80">With technology becoming more affordable and accessible, e-learning has started to emerge as a viable and valuable educational tool.</div>
-        <div class="flex">
-
-        </div>
     </div>
   </div>
   <div>
@@ -115,7 +115,7 @@
     <div class="max-w-5xl mx-auto h-[500px]">
         <div class="flex justify-between ">
           <div class="block mt-[40px] ">
-            <div class="text-[24px] font-semibold mb-5">We give more <span class="text-[#40AAF8]">solutions</span> to problems in our projects</div>
+            <div class="text-[24px] font-semibold mb-5">We give more <span class="gradient">solutions</span> to problems in our projects</div>
            <div class="relative bg-slate-400 ">
              <img class="absolute ml-5 mt-5" src="../assets/Vector.svg" alt="">
              <img class="absolute left-0.5 top-1" src="../assets/E14.svg" alt="">
@@ -149,7 +149,10 @@
   <div class="max-w-5xl mx-auto h-[450px]">
       <div class="flex mt-5">
         <div class="block w-[460px]">
-        <p class="text-[40px] pt-6 mb-2 font-bold  text-blue-600 ">Video<span class="font-bold text-[#19172C] "> Explaining</span></p>
+        <div class="flex pt-6 mb-2 ">
+          <p class="text-[40px] font-bold  gradient ">Video</p>
+          <span class="font-bold text-[#19172C] text-[40px] ml-2">explaining</span>
+        </div>
         <div class="text-[20px] leading-8 opacity-50">The key to a web-based educational application is its 
           compatibility with different platforms and devices. If the program presents accessibility barriers like requiring an updated browser 
           or OS, then the efficacy of the learning initiatives will be 
@@ -164,13 +167,19 @@
   </div>
   <div class="bg-[#FAF9F9]">
       <div class="max-w-5xl mx-auto h-[1100px]">
-        <p class="text-[40px] pt-6 mb-2 font-bold  text-blue-600 ">Product<span class="font-bold text-[#19172C] "> we developed</span></p>
+       <div class="flex pt-6 mb-2">
+         <p class="text-[40px]  font-bold  gradient ">Product</p>
+        <span class="font-bold text-[#19172C] text-[40px] ml-2.5"> we developed</span>
+       </div>
         <div class="text-[20px] opacity-70">Enjoy save and order new project to us.</div>
         <div class="flex mt-5 h-[450px]">
           <img class=" w-[250px] h-[350px] rounded-lg object-cover" src="../assets/portfolio/img47.svg" alt="">
           <img class=" w-[250px] h-[350px] rounded-lg object-cover ml-5" src="../assets/portfolio/222.svg" alt="">
         </div>
-        <p class="text-[40px] pt-6 mb-2 font-bold  text-blue-600 ">Review <span class="font-bold text-[#19172C] ">from our users</span></p>
+       <div class="flex pt-6 mb-2">
+         <p class="text-[40px]  font-bold  gradient ">Review</p>
+        <span class="font-bold text-[#19172C] text-[40px] ml-2.5 ">from our users</span>
+       </div>
         <div class="text-[20px] opacity-70">Enjoy save and order new project to us.</div>
         <div class="flex justify-between">
         <div class="block py-[60px]">
@@ -215,6 +224,35 @@
 <script>
 export default {
     components:{
+    },
+    data() {
+      return {
+        isOpen: false,
+        isOpenLang: false,
+        isopenInd: false,
+        isOpenService: false,
+      }
+    },
+    methods: {
+      openMenu() {
+        this.isOpen = !this.isOpen
+      },
+      openDropdown() {
+        this.isOpenLang = !this.isOpenLang
+      },
+      openDropdownIndustry() {
+        this.isopenInd = !this.isopenInd
+      },
+      openDropdownService() {
+        this.isOpenService = !this.isOpenService
+      },
+      outMenu() {
+        this.isOpenLang = false
+        this.isopenInd = false
+        this.isOpenService = false
+      },
+
+
     }
    
 }
@@ -223,5 +261,27 @@ export default {
 <style>
 .main-ul ul li{
   list-style-type: disc !important;
+}
+.button{
+  background: linear-gradient(267.95deg, #40AAF8 -14.86%, #1D33F8 86.76%);
+  box-shadow: 0px 4px 32px rgba(32, 80, 253, 0.25);
+  border-radius: 10px;
+}
+.gradiet{
+   background: linear-gradient(263.88deg, #40AAF8 49.29%, #1D33F8 102.71%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.contact{
+  border: 1px solid rgba(64, 170, 248, 1);
+  color: rgba(64, 170, 248, 1);
+  }
+.lang-box{
+  background: rgba(25, 23, 44, 0.5);
+  backdrop-filter: blur(26px);
+  border-radius: 8px;
+  border: 1px solid rgba(64, 170, 248, 1);
 }
 </style>

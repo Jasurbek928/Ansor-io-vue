@@ -6,29 +6,29 @@
        <div class="content pt-[30px] flex mx-auto justify-between">
                 <div class="block w-[30%]">
                     <div class="flex">
-                        <div class="value text-[50px] text-[#40AAF8] font-bold" akhi="15">0</div>
-                        <span class="text-[40px] text-[#40AAF8] mt-1.5 ml-2 font-bold">+</span>
+                        <div class="value text-[50px] number-bg font-bold" akhi="15">0</div>
+                        <span class="text-[40px] number-bg mt-1.5 ml-2 font-bold">+</span>
                     </div>
                     <div class="text-[20px] text-[#19172C]">Years of custom software development</div>
                 </div>
                  <div class="block w-[30%]">
                      <div class="flex">
-                        <div class="value text-[50px] text-[#40AAF8] font-bold" akhi="156">0</div>
-                        <span class="text-[40px] text-[#40AAF8] mt-1.5 ml-2 font-bold">+</span>
+                        <div class="value text-[50px] number-bg font-bold" akhi="156">0</div>
+                        <span class="text-[40px] number-bg mt-1.5 ml-2 font-bold">+</span>
                     </div>
                     <div class="text-[20px] text-[#19172C]">All kind of successfully completed projects </div>
                 </div>
                  <div class="block w-[30%]">
                      <div class="flex">
-                        <div class="value text-[50px] text-[#40AAF8] font-bold" akhi="97">0</div>
-                        <span class="text-[40px] text-[#40AAF8] mt-1.5 ml-1 font-bold">%</span>
+                        <div class="value text-[50px] number-bg font-bold" akhi="97">0</div>
+                        <span class="text-[40px] number-bg mt-1.5 ml-1 font-bold">%</span>
                     </div>
                     <div class="text-[20px] text-[#19172C]">Of our team is hard core developers</div>
                 </div>
                  <div class="w-[20%] mx-auto block text-right ">
                     <div class="flex">
-                        <div class="value text-[50px] text-[#40AAF8] font-bold" akhi="211">0</div>
-                        <span class="text-[45px] text-[#40AAF8] mt-1.5 ml-1 font-bold">K</span>
+                        <div class="value text-[50px] number-bg font-bold" akhi="211">0</div>
+                        <span class="text-[45px] number-bg mt-1.5 ml-1 font-bold">K</span>
                     </div>
                     <div class="text-[20px] text-[#19172C] text-justify">Active users/ month for liberty Global</div>
                 </div>
@@ -75,5 +75,11 @@ export default{
 </script>
 
 <style>
-
+.number-bg{
+    background: linear-gradient(263.88deg, #40AAF8 49.29%, #1D33F8 102.71%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
 </style>

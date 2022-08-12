@@ -2,86 +2,87 @@
   <div>
     <div class="bg-[#FAF9F9]">
         <div class="portfolio max-w-5xl mx-auto">
-      <div class="nav flex h-[120px] py-5 full justify-between">
-       <div class="flex  mt-1 w-[200px]">
+     <div class=" max-w-5xl mx-auto nav flex h-[125px] py-5 justify-between ">
+     <div class="flex  mt-1 w-[200px]">
             <router-link class="flex w-[200px]" to="/">
               <img class="w-[30px] h-[30px]" src="../assets/Group.svg" alt="">
              <p class="ml-1.5 text-[22px] text-[#19172C] font-medium">ANSOR.IO</p>
             </router-link>
       </div>
-      <div class="nav-link flex ">
-        <ul class="flex">
-          <li>
-            <router-link  to="/">
-            <button @focusout="outMenu()"  @click="openDropdownService()" class="text-[#19172C] font-medium rounded-lg text-[#19172C] w-[150px]  px-4 py-2.5 text-center text-[16px] inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button"><router-link to="/">Our Services</router-link><svg class="ml-2 w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
-              <div v-show="isOpenService" class=" bg-white rounded  mx-2 text-center">
-                <ul class=" text-[12px] text-gray-700 dark:text-gray-200 text-justify">
-                  <li class="">
-                    <a href="#" class="block py-1 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+      <div class="nav-link flex">
+        <ul class="flex ml-5">
+          <!-- services-link -->
+          <li class=" px-4 py-2.5">
+            <div class="flex  w-[130px]">
+              <router-link class="text-[#19172C] text-[16px]" to="/">Our services</router-link>
+            <div  @click="openDropdownService()" class="w-[20px]  h-[20px]"><img class="w-[10px] h-[7px] mt-2 ml-2" src="../assets/about/Vector.svg" alt=""></div>
+            </div>
+            <div v-show="isOpenService" @focusout="outMenu()" class="lang-box bg-white rounded mt-2">
+                <ul class=" text-[12px]">
+                  <li>
+                    <a href="#" class="block py-1 px-4 hover:text-[#5D5FEF] text-white">Dashboard</a>
                   </li>
                   <li>
-                    <a href="#" class="block  px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                    <a href="#" class="block  px-4 hover:text-[#5D5FEF] text-white">Settings</a>
                   </li>
                   <li>
-                    <a href="#" class="block py-1 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                    <a href="#" class="block py-1 px-4 hover:text-[#5D5FEF] text-white">Earnings</a>
                   </li>
                 </ul>
   
               </div>
-            </router-link>
           </li>
-           <li>
-            <router-link  to="/portfolio">
-            <button @focusout="outMenu()" @click="openDropdownIndustry()"  class="text-[#19172C] w-[120px]  font-medium text-[16px] px-4 py-2.5 text-center inline-flex items-center" type="button"><router-link to="/industry">Industry</router-link><svg class="ml-2 w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
-              <div v-show="isopenInd" class="bg-white rounded  mx-2 text-center">
-                <ul class=" text-[12px] text-justify">
+          <!-- industry-link -->
+            <li class="py-2.5 ">
+            <div class="flex  w-[110px]">
+              <div class=""><router-link class="text-[#19172C] text-[16px]" to="/industry">Industry</router-link></div>
+            <div @click="openDropdownIndustry()" class="w-[20px]  h-[20px]"><img class="w-[10px] h-[7px] mt-2 ml-2 " src="../assets/about/Vector.svg" alt=""></div>
+            </div>
+            <div v-show="isopenInd" @focusout="outMenu()" class="lang-box bg-white rounded mt-2">
+                <ul class=" text-[12px]">
                   <li>
-                    <a href="#" class="block py-1 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Healthcare</a>
+                    <a href="#" class="block py-1 px-4 hover:text-[#5D5FEF] text-white">Healthcare</a>
                   </li>
                   <li>
-                    <a href="#" class="block  px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Education</a>
+                    <a href="#" class="block  px-4 hover:text-[#5D5FEF] text-white">Education</a>
                   </li>
                   <li>
-                    <a href="#" class="block py-1 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Finance</a>
+                    <a href="#" class="block py-1 px-4 hover:text-[#5D5FEF] text-white">Finance</a>
                   </li>
                 </ul>
   
               </div>
-            </router-link>
           </li>
-            <li class=" px-4 py-2.5 ">
+            <!-- portfolio-link -->
+            <li class="px-4 py-2.5 w-[110px] ">
             <router-link  class="text-[#19172C] text-[16px] " to="/portfolio">Portfolio</router-link>
-          </li>
-            <li class="px-4 py-2.5 ">
+            </li>
+            <!-- about-link -->
+            <li class="px-4 py-2.5 w-[110px] ">
             <router-link  class="text-[#19172C] text-[16px]" to="/about">About Us</router-link>
             </li>
-
-         
         </ul>
       </div>
-      <div class="flex">
+      <div class="flex ml-10">
           <div>
-            <router-link class="" to="/portfolio">
-            <button @focusout="outMenu()" @click="openDropdown()"  id="dropdownDividerButton" data-dropdown-toggle="dropdownDivider" class="font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center " type="button"><img class="mr-1.5" src="../assets/language/united.svg" alt=""> En</button>
-              <div v-show="isOpenLang" class=" bg-[#19172C] rounded">
-                <ul class=" text-sm text-gray-700 dark:text-gray-200 rounded">
-                  <li class="flex hover:bg-slate-500 py-1">
+            <button @focusout="outMenu()" @click="openDropdown()" class=" font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center " type="button"><img class="mr-1.5" src="../assets/language/united.svg" alt=""> En</button>
+              <div v-show="isOpenLang" class="rounded">
+                <ul class="rounded lang-box">
+                  <li class="flex  py-1">
                     <img class="ml-3" src="../assets/language/uzb.svg" alt="">
-                    <a href="#" class=" block py-1 px-2 hover:text-white">O’z</a>
+                    <a href="#" class=" block py-1 px-2 text-white ">O’z</a>
                   </li>
                   
-                  <li class="flex hover:bg-slate-500">
+                  <li class="flex ">
                     <img class="ml-3" src="../assets/language/rus.svg" alt="">
-                    <a href="#" class=" block py-2 px-2 hover:text-white">Ру</a>
+                    <a href="#" class=" block py-2 px-2 text-white">Ру</a>
                   </li>
                 </ul>
-  
               </div>
-          </router-link>
           </div>
 
         <div>
-        <button  type="button" class=" py-2 ml-5 px-5 mt-1 text-sm font-medium focus:outline-none  rounded-lg border border-[#40AAF8] text-[#40AAF8]">Contact Us</button>
+          <button  type="button" class=" py-2 ml-5 px-5 mt-1 text-sm font-medium focus:outline-none  rounded-lg border border-[#40AAF8] text-[#40AAF8]">Contact Us</button>
         </div>
       </div>
     </div>
@@ -92,7 +93,7 @@
       </div>
        <div class="max-w-5xl mx-auto h-[1050px] ">
       <div>
-        <p class="text-[40px] pt-6 mb-2 font-bold">Our <span class="text-blue-600 font-bold ">light portfolio</span></p>
+        <p class="text-[40px] pt-6 mb-2 font-bold">Our <span class="gradient font-bold ">light portfolio</span></p>
         <div class="text-xl mb-4">Enjoy save and order new project to us</div>
       </div>
       <div class="tab">
